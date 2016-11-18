@@ -10,38 +10,38 @@ It also spreads itself by emailing itself.
 
 It has over 30 anti-debugging processes.
 Here is the list:
-Anti-Notepad
-Anti-CMD
-Anti-Outpost
-Anti-Node32
-Anti-ZoneAlarm
-Anti-VMWare
-Anti-KAV
-Anti-VirtualBox
-Anti-VirtualPC
-Anti-Anubis Method 1
-Anti-Anubis Method 2
-Anti-WireShark
-Anti-WindowsDefender
-Anti-ASquared
-Anti-Avast
-Anti-AVG
-Anti-Bitdefender
-Anti-Kaspersky
-Anti-MalwareBytes
-Anti-McAfee
-Anti-Nod32 Method 2
-Anti-Norton
-Anti-OllyDebugger
-Anti-IDDT
-Anti-AQtime Method 1
-Anti-AQtime Method 2
-Anti-PROA
-Anti-WinDbg
-Anti-ConEmu
-Anti-ColorConsole
-Anti-PowerCMD
-Anti-Sandboxie
+1.   Anti-Notepad
+2.   Anti-CMD
+3.   Anti-Outpost
+4.   Anti-Node32
+5.   Anti-ZoneAlarm
+6.   Anti-VMWare
+7.   Anti-KAV
+8.   Anti-VirtualBox
+9.   Anti-VirtualPC
+10.  Anti-Anubis Method 1
+11.  Anti-Anubis Method 2
+12.  Anti-WireShark
+13.  Anti-WindowsDefender
+14.  Anti-ASquared
+15.  Anti-Avast
+16.  Anti-AVG
+17.  Anti-Bitdefender
+18.  Anti-Kaspersky
+19.  Anti-MalwareBytes
+20.  Anti-McAfee
+21.  Anti-Nod32 Method 2
+22.  Anti-Norton
+23.  Anti-OllyDebugger
+24.  Anti-IDDT
+25.  Anti-AQtime Method 1
+26.  Anti-AQtime Method 2
+27.  Anti-PROA
+28.  Anti-WinDbg
+29.  Anti-ConEmu
+30.  Anti-ColorConsole
+31.  Anti-PowerCMD
+32.  Anti-Sandboxie
 
 
 

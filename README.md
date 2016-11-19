@@ -56,5 +56,5 @@ It makes the forms used for virus hidden and not show up in taskbar.
 
 The payload that I implemented was a keylogger that emails log files to you
 
-Overall I would say that getting rid of this trojan/virus is impossible until AV can detect it, but as of 11/16/18 it is still completely FUD.
+Overall I would say that getting rid of this trojan/virus is impossible until AV can detect it, but as of 11/15/18 it is still completely FUD.
 USE: https://nodistribute.com/ - Use VPN when out of uses, or spoof IP.
